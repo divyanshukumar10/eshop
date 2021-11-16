@@ -1,0 +1,70 @@
+{
+	"Routes": [
+		{
+			"DownstreamPathTemplate": "/api/Item",
+			"DownstreamScheme": "http",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "localhost",
+					"Port": 55162
+				}
+			],
+			"UpstreamPathTemplate": "/eshop/Item"
+		},
+		{
+			"DownstreamPathTemplate": "/api/Item/{catchall}",
+			"DownstreamScheme": "http",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "localhost",
+					"Port": 55162
+				}
+			],
+			"UpstreamPathTemplate": "/eshop/Item/{catchall}"
+		},
+		{
+			"DownstreamPathTemplate": "/api/Category",
+			"DownstreamScheme": "http",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "localhost",
+					"Port": 55162
+				}
+			],
+			"UpstreamPathTemplate": "/eshop/Category"
+		},
+		{
+			"DownstreamPathTemplate": "/api/Categroy/{catchall}",
+			"DownstreamScheme": "http",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "localhost",
+					"Port": 55162
+				}
+			],
+			"UpstreamPathTemplate": "/eshop/Category/{catchall}"
+		},
+		{
+			"DownstreamPathTemplate": "/api/Account",
+			"DownstreamScheme": "http",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "localhost",
+					"Port": 53671
+				}
+			],
+			"UpstreamPathTemplate": "/eshop/Account"
+		},
+		{
+			"DownstreamPathTemplate": "/api/Account/{catchall}",
+			"DownstreamScheme": "http",
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "localhost",
+					"Port": 53671
+				}
+			],
+			"UpstreamPathTemplate": "/eshop/Account/{catchall}"
+		}
+	]
+}
